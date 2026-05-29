@@ -15,7 +15,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="logo">Spotto<span>.</span></div>
+  <div class="logo">Spotto<span class="brand-dot">.</span></div>
   <ul class="nav-links">
     <li><a href="#estrategia">Estrategia</a></li>
     <li><a href="#identidad">Identidad</a></li>
@@ -40,56 +40,7 @@
     <div class="map-bg"></div>
     <div class="phone-mockup">
       <div class="phone-inner">
-        <!-- STATUS BAR -->
-        <div class="phone-bar">
-          <div style="display:flex;align-items:center;gap:6px;">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="rgba(255,255,255,0.3)" stroke-width="1"/><circle cx="6" cy="6" r="3" fill="rgba(255,255,255,0.5)"/></svg>
-            <span style="font-size:9px;color:rgba(255,255,255,0.5);font-family:DM Mono,monospace;letter-spacing:0.08em;">CONDUCTOR</span>
-          </div>
-          <div class="toggle-pill"></div>
-          <div class="phone-logo">Spotto<span>.</span></div>
-        </div>
-
-        <!-- MAP -->
-        <div class="phone-map">
-          <div class="map-grid"></div>
-          <div class="map-street-h" style="top:30%;"></div>
-          <div class="map-street-h" style="top:55%;"></div>
-          <div class="map-street-h" style="top:75%;"></div>
-          <div class="map-street-v" style="left:35%;"></div>
-          <div class="map-street-v" style="left:65%;"></div>
-
-          <!-- pins -->
-          <div class="map-pin" style="top:38%;left:42%;">
-            <div class="pin-bubble">La Mision</div>
-            <div class="pin-dot"></div>
-          </div>
-          <div class="map-pin" style="top:22%;left:60%;">
-            <div class="pin-bubble" style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);">Bar</div>
-            <div class="pin-dot" style="background:rgba(255,255,255,0.3);"></div>
-          </div>
-          <div class="map-pin" style="top:55%;left:68%;">
-            <div class="pin-bubble" style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);">Café</div>
-            <div class="pin-dot" style="background:rgba(255,255,255,0.3);"></div>
-          </div>
-
-          <!-- Parking badge -->
-          <div style="position:absolute;bottom:10px;right:10px;background:var(--green);color:var(--navy);font-size:9px;font-weight:700;padding:4px 8px;border-radius:6px;letter-spacing:0.05em;">P · $1.200</div>
-        </div>
-
-        <!-- BOTTOM SHEET -->
-        <div class="phone-bottom">
-          <div class="search-bar">
-            <div class="search-icon"></div>
-            <span class="search-text">¿A dónde vas?</span>
-          </div>
-          <div class="chips-row">
-            <div class="chip active">Explorar</div>
-            <div class="chip">Casa</div>
-            <div class="chip">Trabajo</div>
-            <div class="chip">After</div>
-          </div>
-        </div>
+        <img class="phone-screen" src="assets/images/app-explorar-real.png" alt="Captura real de la app Spotto en explorar">
       </div>
     </div>
   </div>
@@ -192,25 +143,25 @@
     <div class="logo-display">
       <div class="logo-variant">
         <div class="logo-box light">
-          <span class="logo-text" style="color:var(--navy);">Spotto<span class="dot">.</span></span>
+          <span class="logo-text" style="color:var(--navy);">Spotto<span class="dot brand-dot">.</span></span>
         </div>
         <div class="logo-label">Primario / fondo claro</div>
       </div>
       <div class="logo-variant">
         <div class="logo-box dark">
-          <span class="logo-text" style="color:white;">Spotto<span class="dot" style="color:var(--green);">.</span></span>
+          <span class="logo-text" style="color:white;">Spotto<span class="dot brand-dot" style="color:var(--green);">.</span></span>
         </div>
         <div class="logo-label">Primario / fondo oscuro</div>
       </div>
       <div class="logo-variant">
         <div class="logo-box green">
-          <span class="logo-text" style="color:var(--navy);">Spotto<span class="dot">.</span></span>
+          <span class="logo-text" style="color:var(--navy);">Spotto<span class="dot brand-dot">.</span></span>
         </div>
         <div class="logo-label">Verde / uso especial</div>
       </div>
       <div class="logo-variant">
         <div class="logo-box dark" style="min-width:80px;padding:1.5rem;">
-          <span style="font-size:28px;font-weight:700;color:white;letter-spacing:-1px;line-height:1;">S<span style="color:var(--green);vertical-align:baseline;display:inline;line-height:inherit;">.</span></span>
+          <span style="font-size:28px;font-weight:700;color:white;letter-spacing:-1px;line-height:1;">S<span class="brand-dot" style="color:var(--green);">.</span></span>
         </div>
         <div class="logo-label">Isotipo / app icon</div>
       </div>
@@ -340,9 +291,33 @@
 <!-- COMPONENTES UI -->
 <div class="ui-section" id="ui">
   <div class="ui-inner">
-    <div class="section-label">04 · Producto</div>
-    <h2 class="section-title">Sistema de componentes</h2>
-    <p class="section-sub" style="color:var(--text-2);">Chips, cards, CTAs y badges que construyen experiencias de señales simples. El branding vive en la experiencia.</p>
+    <div class="section-label">04 · Producto real</div>
+    <h2 class="section-title">La marca vive en la app</h2>
+    <p class="section-sub" style="color:var(--text-2);">Más que componentes aislados, Spotto se reconoce en cómo resuelve el mapa, el discovery y el parking en una sola pantalla.</p>
+
+    <div class="product-real-grid">
+      <div class="product-shot fade-up">
+        <div class="product-shot-label">Explorar · captura real</div>
+        <img src="assets/images/app-explorar-real.png" alt="Captura real de la app Spotto">
+      </div>
+      <div class="product-real-copy">
+        <div class="product-note fade-up">
+          <div class="product-note-kicker">Claro primero</div>
+          <div class="product-note-title">El mapa manda</div>
+          <div class="product-note-body">La UI acompaña. El usuario tiene que leer rápido dónde está, qué se mueve cerca y cómo estacionar sin perder tiempo.</div>
+        </div>
+        <div class="product-note fade-up" style="transition-delay:0.08s;">
+          <div class="product-note-kicker">Discovery útil</div>
+          <div class="product-note-title">Partners, categorías y mood</div>
+          <div class="product-note-body">Los lugares adheridos no tapan el mapa: lo ordenan. Discovery sugiere, no distrae.</div>
+        </div>
+        <div class="product-note fade-up" style="transition-delay:0.16s;">
+          <div class="product-note-kicker">Marca aplicada</div>
+          <div class="product-note-title">Verde como señal, no adorno</div>
+          <div class="product-note-body">El verde Spotto aparece donde hay acción, disponibilidad o decisión. Nunca como relleno porque sí.</div>
+        </div>
+      </div>
+    </div>
 
     <div class="ui-grid">
       <div class="ui-card">
@@ -385,6 +360,28 @@
           <button class="cta-primary">Ver parking cerca</button>
           <button class="cta-secondary">Cómo llegar</button>
         </div>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-top:4rem;">05 · Discovery</div>
+    <h2 class="section-title" style="margin-bottom:0.75rem;">Descubrí. Decidí. Estacioná.</h2>
+    <p class="section-sub" style="color:var(--text-2);">Discovery no es una capa social. Es una guía urbana corta para elegir mejor y estacionar cerca.</p>
+
+    <div class="discovery-flow">
+      <div class="discovery-step fade-up">
+        <div class="discovery-step-num">01</div>
+        <div class="discovery-step-title">Descubrí</div>
+        <div class="discovery-step-body">Categorías, partners y señales simples como “Activo ahora” o “Buen momento para caer”.</div>
+      </div>
+      <div class="discovery-step fade-up" style="transition-delay:0.08s;">
+        <div class="discovery-step-num">02</div>
+        <div class="discovery-step-title">Decidí</div>
+        <div class="discovery-step-body">La app ayuda a elegir zona, plan y comercio adherido sin irse del mapa.</div>
+      </div>
+      <div class="discovery-step fade-up" style="transition-delay:0.16s;">
+        <div class="discovery-step-num">03</div>
+        <div class="discovery-step-title">Estacioná</div>
+        <div class="discovery-step-body">El cierre siempre vuelve a Spotto: parking contextual cerca del lugar al que vas.</div>
       </div>
     </div>
 
@@ -472,7 +469,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Spotto<span>.</span></div>
+  <div class="footer-logo">Spotto<span class="brand-dot">.</span></div>
   <div class="footer-text">Brandbook v3.0 · Sistema de marca completo</div>
 </footer>
 

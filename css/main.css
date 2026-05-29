@@ -53,9 +53,12 @@
   }
   .logo span {
     color: var(--green);
-    vertical-align: baseline;
-    display: inline;
-    line-height: inherit;
+  }
+
+  .brand-dot {
+    display: inline-block;
+    line-height: 1;
+    transform: translate(0.08em, -0.08em);
   }
 
   .nav-links {
@@ -209,6 +212,14 @@
     position: relative;
   }
 
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
   .phone-map {
     width: 100%;
     height: 65%;
@@ -284,7 +295,7 @@
     letter-spacing: -0.2px;
     line-height: 1;
   }
-  .phone-logo span { color: var(--green); vertical-align: baseline; display: inline; line-height: inherit; }
+  .phone-logo span { color: var(--green); }
 
   .toggle-pill {
     width: 28px;
@@ -661,9 +672,6 @@
   }
   .logo-text .dot {
     color: var(--green);
-    vertical-align: baseline;
-    display: inline;
-    line-height: inherit;
   }
   .logo-box.green .logo-text { color: var(--navy); }
   .logo-box.green .logo-text .dot { color: var(--navy); }
@@ -783,6 +791,86 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 3rem;
+  }
+
+  .product-real-grid {
+    display: grid;
+    grid-template-columns: minmax(320px, 420px) 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .product-shot {
+    background: rgba(255,255,255,0.72);
+    border-radius: 28px;
+    padding: 1rem;
+    border: 1px solid rgba(11,18,32,0.08);
+    box-shadow: 0 30px 80px rgba(11,18,32,0.08);
+  }
+
+  .product-shot-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    margin-bottom: 0.75rem;
+  }
+
+  .product-shot img {
+    width: 100%;
+    display: block;
+    border-radius: 22px;
+    border: 1px solid rgba(11,18,32,0.08);
+  }
+
+  .product-real-copy {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .product-note,
+  .discovery-step {
+    background: rgba(255,255,255,0.76);
+    border-radius: 22px;
+    padding: 1.5rem;
+    border: 1px solid rgba(11,18,32,0.08);
+    box-shadow: 0 24px 50px rgba(11,18,32,0.05);
+  }
+
+  .product-note-kicker,
+  .discovery-step-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    margin-bottom: 0.5rem;
+  }
+
+  .product-note-title,
+  .discovery-step-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--navy);
+    margin-bottom: 0.45rem;
+  }
+
+  .product-note-body,
+  .discovery-step-body {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  .discovery-flow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2.25rem;
   }
 
   .ui-card {
@@ -1018,7 +1106,7 @@
   }
 
   .footer-logo { font-size: 18px; font-weight: 700; color: white; letter-spacing: -0.3px; line-height: 1; }
-  .footer-logo span { color: var(--green); vertical-align: baseline; display: inline; line-height: inherit; }
+  .footer-logo span { color: var(--green); }
 
   .footer-text {
     font-family: 'DM Mono', monospace;
@@ -1044,7 +1132,7 @@
     .hero-content { padding: 8rem 2rem 5rem; }
     .strategy-grid, .audience-grid { grid-template-columns: 1fr; }
     .color-grid { grid-template-columns: repeat(4, 1fr); }
-    .type-grid, .ui-grid, .values-grid, .checklist { grid-template-columns: 1fr; }
+    .type-grid, .ui-grid, .values-grid, .checklist, .product-real-grid, .discovery-flow { grid-template-columns: 1fr; }
     .tone-grid { grid-template-columns: 1fr; }
     .identity-section, .tone-section, .ui-section, .claim-section { padding: 80px 2rem; }
     footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem; }
